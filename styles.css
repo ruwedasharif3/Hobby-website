@@ -120,3 +120,8 @@
         margin: 20px 0;
     }
 }
+
+section.one {
+    padding: 20px; /* Adds 20px of padding on all sides of section two */
+  }
+  
