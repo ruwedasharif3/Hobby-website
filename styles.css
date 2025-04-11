@@ -1,66 +1,122 @@
 * {
     margin: 0px;
-    padding:0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-.box{
+
+.navbar {
+    width: 100%;
+    background-color: aqua;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu ul{
+    display: flex;
+    padding-right: 30px;
+}
+
+.nav-menu ul li{
+    list-style: none;
+    padding: 15px 25px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: navy;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li:hover {
+    background-color: #67828f;
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu li {
+        padding-left: 30px;
+    }
+
+    .nav-menu a {
+        font-size: 17px;
+    }
+}
+
+.box {
     width: 100%;
 }
-.box .row {
-    width: 100%;
-    margin: auto;
-}
-.box .row .header{
+
+.box .row .header {
     width: 60%;
     text-align: center;
     margin: auto;
 }
+
 .box .row .header h1 {
     padding-top: 30px;
     font-size: 45px;
 }
+
 .box .row .header p {
     margin-top: 15px;
     font-size: 18px;
     line-height: 1.5;
 }
-.box {
-    width: 100%
-}
+
 .box .card {
-    flex:1;
+    flex: 1;
     width: 30%;
     margin: 50px 20px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
+
 .box .card img {
     width: 100%;
     height: auto;
 }
+
 .box .card h3 {
     margin-top: 10px;
     margin-left: 10px;
     font-size: 18px;
 }
+
 .content {
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
     margin: auto;
 }
-.content .card p{
+
+.content .card p {
     font-size: 15px;
     line-height: 1.5;
     padding: 10px;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .content {
         flex-direction: column;
         align-items: center;
     }
+
     .box .card {
-    width: 80%;
-    margin: 20px 0;
+        width: 80%;
+        margin: 20px 0;
     }
 }
